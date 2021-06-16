@@ -1,0 +1,7 @@
+section#grow {
+@include  middleSectionPadding;
+background-color: $veryPaleBlue;
+  .flex {
+    @include middleSections;
+  }
+}

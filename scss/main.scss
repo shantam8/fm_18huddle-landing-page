@@ -2,15 +2,48 @@
 @import "mixins";
 @import "variables";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "1header";
+@import "2build";
+@import "3mockup";
+@import "4grow";
+@import "5flow";
+@import "6users";
+@import "7ready";
+@import "8footer";
 
-    //     font-family: 'Poppins', sans-serif; 700
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    //font-family: 'Open Sans', sans-serif; 4 6 7
+  //     font-family: 'Poppins', sans-serif; 700
 
+  //font-family: 'Open Sans', sans-serif; 4 6 7
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h4{
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5rem;
 }
 
 
+
+p,
+button,
+input {
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}

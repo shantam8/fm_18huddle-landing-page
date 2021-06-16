@@ -1,0 +1,8 @@
+section#users {
+  @include  middleSectionPadding;
+    background-color: $veryPaleBlue;
+    .flex {
+      @include middleSections;
+    }
+  }
+  

@@ -1,0 +1,13 @@
+section#ready{
+    text-align: center;
+
+    h1{
+
+        
+    }
+    button{
+        @include button;
+        margin-top: 2rem;
+        margin-bottom: 15rem;
+    }
+}

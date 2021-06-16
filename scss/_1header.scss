@@ -1,0 +1,28 @@
+header{
+
+    padding: 1rem;
+
+    .flex
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            width: 6rem;
+        }
+
+        button{
+            width: 6rem;
+            height: 2rem;
+            color: $lightPink;
+            background-color: white;
+            border: 1px solid $lightPink;
+            border-radius: 25px;
+            
+        }
+    }
+
+
+
+}

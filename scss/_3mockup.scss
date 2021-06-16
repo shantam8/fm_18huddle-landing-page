@@ -1,0 +1,31 @@
+section#mockup {
+  padding: 5rem 2rem;
+
+  .grid {
+    img {
+      width: 100%;
+    }
+
+    .card {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 3rem;
+      padding: 1rem;
+      text-align: left;
+
+      img {
+        position: relative;
+        width: 25px;
+        left: 28px;
+        top: 6px;
+      }
+      h2 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 3rem;
+      }
+      p {
+        color: gray;
+      }
+    }
+  }
+}
