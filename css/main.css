@@ -29,6 +29,21 @@ header .flex button {
   border-radius: 25px;
 }
 
+header .flex button:hover {
+  cursor: pointer;
+  color: #ff52bf;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-weight: 700;
+}
+
+header .flex button:active {
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  border-color: #b80074;
+  color: #b80074;
+}
+
 section#build {
   padding: 5rem 3rem 0 3rem;
   margin: 0 auto;
@@ -57,6 +72,19 @@ section#build button {
           box-shadow: 0px 3px 8px 0 gray;
 }
 
+section#build button:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #ff8fd8;
+}
+
+section#build button:active {
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  background-color: #f5009f;
+}
+
 section#mockup {
   padding: 5rem 2rem;
 }
@@ -66,7 +94,7 @@ section#mockup .grid img {
 }
 
 section#mockup .grid .card {
-  width: 70%;
+  width: 12rem;
   margin: 0 auto;
   margin-top: 3rem;
   padding: 1rem;
@@ -76,7 +104,7 @@ section#mockup .grid .card {
 section#mockup .grid .card img {
   position: relative;
   width: 25px;
-  left: 28px;
+  left: 0.8rem;
   top: 6px;
 }
 
@@ -90,8 +118,7 @@ section#mockup .grid .card p {
 }
 
 section#grow {
-  margin: 7rem 0;
-  padding: 2rem;
+  padding: 7rem 3rem;
   background-color: #f5faff;
 }
 
@@ -112,8 +139,7 @@ section#grow .flex .text p {
 }
 
 section#flow {
-  margin: 7rem 0;
-  padding: 2rem;
+  padding: 7rem 3rem;
 }
 
 section#flow .flex img {
@@ -133,8 +159,7 @@ section#flow .flex .text p {
 }
 
 section#users {
-  margin: 7rem 0;
-  padding: 2rem;
+  padding: 7rem 3rem;
   background-color: #f5faff;
 }
 
@@ -155,6 +180,7 @@ section#users .flex .text p {
 }
 
 section#ready {
+  padding: 7rem 3rem;
   text-align: center;
 }
 
@@ -172,6 +198,19 @@ section#ready button {
   margin-bottom: 15rem;
 }
 
+section#ready button:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #ff8fd8;
+}
+
+section#ready button:active {
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  background-color: #f5009f;
+}
+
 footer {
   padding: 4rem 2rem;
   background-color: #00252e;
@@ -179,6 +218,10 @@ footer {
 
 footer .flex {
   color: white;
+}
+
+footer .flex #newsletter {
+  position: relative;
 }
 
 footer .flex #newsletter h3 {
@@ -218,6 +261,30 @@ footer .flex #newsletter button {
   -webkit-box-shadow: none;
           box-shadow: none;
   font-size: 1rem;
+}
+
+footer .flex #newsletter button:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #ff8fd8;
+}
+
+footer .flex #newsletter button:active {
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  background-color: #f5009f;
+}
+
+footer .flex #newsletter.error::before {
+  position: absolute;
+  padding-left: 1rem;
+  content: "Check your email please";
+  top: 12rem;
+  left: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6rem;
+  color: #ff4242;
 }
 
 footer .flex #contactInfo {
@@ -269,7 +336,7 @@ footer .flex #contactInfo .mail::before {
 
 footer .flex #contactInfo .socialMedia {
   margin-top: 3rem;
-  width: 40%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,6 +353,22 @@ footer .flex #contactInfo .socialMedia .svg {
   height: 30px;
 }
 
+footer .flex #contactInfo .socialMedia .svg:hover {
+  cursor: pointer;
+}
+
+footer .flex #contactInfo .socialMedia .svg:hover svg path {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  fill: lightskyblue;
+}
+
+footer .flex #contactInfo .socialMedia .svg:active svg path {
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  fill: green;
+}
+
 footer .flex #contactInfo .socialMedia .svg svg {
   width: 100%;
   height: 100%;
@@ -293,6 +376,31 @@ footer .flex #contactInfo .socialMedia .svg svg {
 
 footer .flex #contactInfo .socialMedia .svg svg path {
   fill: white;
+}
+
+section#bgTop1 {
+  content: url("../images/bg-section-top-mobile-1.svg");
+  width: 100%;
+}
+
+section#bgBottom1 {
+  content: url("../images/bg-section-bottom-mobile-1.svg");
+  width: 100%;
+}
+
+section#bgTop2 {
+  content: url("../images/bg-section-top-mobile-2.svg");
+  width: 100%;
+}
+
+section#bgBottom2 {
+  content: url("../images/bg-section-bottom-mobile-2.svg");
+  width: 100%;
+}
+
+section#bgFooter {
+  content: url("../images/bg-footer-top-mobile.svg");
+  width: 100%;
 }
 
 * {

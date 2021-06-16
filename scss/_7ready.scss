@@ -1,4 +1,6 @@
 section#ready{
+
+    @include middleSectionPadding;
     text-align: center;
 
     h1{
@@ -7,6 +9,7 @@ section#ready{
     }
     button{
         @include button;
+        @include hoverBtn;
         margin-top: 2rem;
         margin-bottom: 15rem;
     }

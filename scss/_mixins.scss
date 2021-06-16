@@ -26,6 +26,40 @@
 }
 
 @mixin middleSectionPadding{
-    margin: 7rem 0;
-    padding: 2rem ;
+  padding: 7rem 3rem;
+}
+
+
+@mixin hoverSvg {
+  &:hover{
+    cursor: pointer;
+    svg path{
+      transition: all 0.5s ease-in-out;
+      fill: lightskyblue;
+    }
+  }
+
+  &:active{
+    svg path{
+      transition: all 0s ease-in-out;
+      fill: green;
+    }
+  }
+}
+
+@mixin hoverBtn{
+  &:hover{
+    cursor: pointer;
+    
+      transition: all 0.5s ease-in-out;
+      background-color: $lightPink;
+    
+  }
+
+  &:active{
+    
+      transition: all 0s ease-in-out;
+      background-color: darken($lightPink, 30%);
+    
+  }
 }

@@ -6,6 +6,8 @@ footer {
     color: white;
 
     #newsletter {
+      position: relative;
+
       h3 {
         text-align: left;
         text-transform: uppercase;
@@ -27,6 +29,7 @@ footer {
 
       button {
         @include button;
+        @include hoverBtn;
         position: relative;
         left: 50%;
         margin-top: 1rem;
@@ -34,6 +37,19 @@ footer {
         border-radius: 4px;
         box-shadow: none;
         font-size: 1rem;
+      }
+
+      &.error {
+        &::before {
+          position: absolute;
+          padding-left: 1rem;
+          content: "Check your email please";
+          top: 12rem;
+          left: 0;
+          font-family: "Open Sans", sans-serif;
+          font-size: 0.6rem;
+          color: $lightRed;
+        }
       }
     }
 
@@ -58,7 +74,7 @@ footer {
         text-align: left;
       }
 
-      p{
+      p {
         margin-top: 1rem;
       }
 
@@ -79,12 +95,14 @@ footer {
 
       .socialMedia {
         margin-top: 3rem;
-        width: 40%;
+        width: 30%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .svg {
+          @include hoverSvg;
+
           width: 30px;
           height: 30px;
 
@@ -99,9 +117,5 @@ footer {
         }
       }
     }
-
-
-
-
   }
 }

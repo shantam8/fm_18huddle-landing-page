@@ -15,5 +15,6 @@ section#build {
 
   button {
     @include button;
+    @include hoverBtn;
   }
 }
