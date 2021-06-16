@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
 
+    <script defer src="./js/main.js"></script>
+
     <title>Frontend Mentor | Huddle landing page with curved sections</title>
   </head>
   <body>
@@ -34,9 +36,8 @@
       <button>Get Started For Free</button>
     </section>
     <section id="mockup">
+      <img src="./images/screen-mockups.svg" alt="mockups" />
       <div class="grid">
-        <img src="./images/screen-mockups.svg" alt="mockups" />
-
         <div class="card">
           <img src="./images/icon-communities.svg" alt="communities" />
           <h2>1.4k+</h2>
@@ -111,14 +112,15 @@
             To recieve tips on how to grow your community, sign up to our weekly
             newsletter. We’ll never send you spam or pass on your email address
           </h4>
-          <input
-            type="email"
-            placeholder="john@mail.com"
-            aria-label="email-field"
-          />
-          <div class="error"></div>
+          <div class="form">
+            <input id="inputEmail"
+              type="email"
+              placeholder="john@mail.com"
+              aria-label="email-field"
+            />
 
-          <button aria-label="submit_email_button">Subscribe</button>
+            <button id="btnSubmit" aria-label="submit_email_button">Subscribe</button>
+          </div>
         </div>
 
         <div id="contactInfo">

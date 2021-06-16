@@ -1,22 +1,40 @@
-
 section#bgTop1 {
-    content: url("../images/bg-section-top-mobile-1.svg");
-    width: 100%;
+  content: url("../images/bg-section-top-mobile-1.svg");
+  width: 100%;
+
+  @media screen and(min-width: 640px) {
+    content: url("../images/bg-section-top-desktop-1.svg");
+  }
 }
+
 section#bgBottom1 {
   content: url("../images/bg-section-bottom-mobile-1.svg");
   width: 100%;
+  @media screen and(min-width: 640px) {
+    content: url("../images/bg-section-bottom-desktop-1.svg");
+  }
 }
+
 section#bgTop2 {
-    content: url("../images/bg-section-top-mobile-2.svg");
-    width: 100%;
+  content: url("../images/bg-section-top-mobile-2.svg");
+  width: 100%;
+  @media screen and(min-width: 640px) {
+    content: url("../images/bg-section-top-desktop-2.svg");
+  }
 }
+
 section#bgBottom2 {
-    content: url("../images/bg-section-bottom-mobile-2.svg");
-    width: 100%;
+  content: url("../images/bg-section-bottom-mobile-2.svg");
+  width: 100%;
+  @media screen and(min-width: 640px) {
+    content: url("../images/bg-section-bottom-desktop-2.svg");
+  }
 }
 
 section#bgFooter {
   content: url("../images/bg-footer-top-mobile.svg");
   width: 100%;
+  @media screen and(min-width: 640px) {
+    content: url("../images/bg-footer-top-desktop.svg");
+  }
 }

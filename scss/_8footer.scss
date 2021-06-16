@@ -2,11 +2,30 @@ footer {
   padding: 4rem 2rem;
   background-color: $veryDarkCyan;
 
+  @include breakpoint(medium) {
+    padding: 4rem 6rem;
+  }
+
   .flex {
     color: white;
+    max-width: 500px;
+    margin: 0 auto;
+
+    @include breakpoint(medium) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      gap: 25%;
+      max-width: unset;
+      justify-content: space-evenly;
+    }
 
     #newsletter {
       position: relative;
+
+      @include breakpoint(medium) {
+        max-width: 400px;
+      }
 
       h3 {
         text-align: left;
@@ -15,46 +34,91 @@ footer {
 
       h4 {
         margin-top: 1rem;
+        @include breakpoint(medium) {
+          max-width: 75%;
+        }
       }
 
-      input {
-        margin-top: 2rem;
-        width: 100%;
-        height: 40px;
-        border-radius: 4px;
-        border: none;
-        text-align: left;
-        padding-left: 1rem;
-      }
+      .form {
+        @include breakpoint(medium) {
+          margin-top: 1rem;
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          grid-template-rows: 1fr;
+          gap: 2rem;
+        }
 
-      button {
-        @include button;
-        @include hoverBtn;
-        position: relative;
-        left: 50%;
-        margin-top: 1rem;
-        width: 50%;
-        border-radius: 4px;
-        box-shadow: none;
-        font-size: 1rem;
+        input {
+          margin-top: 2rem;
+          width: 100%;
+          height: 40px;
+          border-radius: 4px;
+          border: none;
+          text-align: left;
+          padding-left: 1rem;
+          margin-top: 0;
+
+          @include breakpoint(medium) {
+            height: 100%;
+          }
+        }
+
+        button {
+          @include button;
+          @include hoverBtn;
+          position: relative;
+          left: 50%;
+          margin-top: 1rem;
+          width: 50%;
+          border-radius: 4px;
+          box-shadow: none;
+          font-size: 1rem;
+
+          @include breakpoint(small) {
+            border-radius: 4px;
+          }
+
+          @include breakpoint(medium) {
+            margin-top: 0;
+            width: 100%;
+            left: 0;
+          }
+        }
       }
 
       &.error {
+
+        #inputEmail{
+          border: 2px solid red;
+        }
+
         &::before {
           position: absolute;
           padding-left: 1rem;
           content: "Check your email please";
-          top: 12rem;
+          bottom: 2.5rem;
           left: 0;
           font-family: "Open Sans", sans-serif;
           font-size: 0.6rem;
           color: $lightRed;
+
+          @include breakpoint(medium) {
+          font-size: 0.8rem;
+          bottom: -1.5rem;
+          }
         }
       }
+
+    
     }
 
     #contactInfo {
       margin-top: 5rem;
+
+      @include breakpoint(medium) {
+        margin-top: 0;
+        max-width: 400px;
+      }
       .grid {
         .svgLogo {
           width: 150px;

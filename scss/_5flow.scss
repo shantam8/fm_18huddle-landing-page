@@ -1,7 +1,11 @@
 section#flow {
-    @include  middleSectionPadding;
-    .flex {
-      @include middleSections;
+  @include middleSectionPadding;
+  .flex {
+    @include middleSections;
+
+    @include breakpoint(small) {
+      @include middleSectionFlex;
+      flex-direction: row;
     }
   }
-  
+}

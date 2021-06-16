@@ -4,6 +4,18 @@ header {
   padding: 1rem;
 }
 
+@media screen and (min-width: 40rem) {
+  header {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  header {
+    padding: 5rem;
+  }
+}
+
 header .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,6 +30,18 @@ header .flex {
 
 header .flex img {
   width: 6rem;
+}
+
+@media screen and (min-width: 40rem) {
+  header .flex img {
+    width: 7rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  header .flex img {
+    width: 8rem;
+  }
 }
 
 header .flex button {
@@ -50,6 +74,18 @@ section#build {
   text-align: center;
 }
 
+@media screen and (min-width: 40rem) {
+  section#build {
+    padding: 5rem 5rem 0 5rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  section#build {
+    padding-top: 3rem;
+  }
+}
+
 section#build h1 {
   font-size: 1.5rem;
   line-height: 2.5rem;
@@ -58,6 +94,13 @@ section#build h1 {
 section#build p {
   margin-top: 1rem;
   margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 40rem) {
+  section#build p {
+    width: 25rem;
+    margin: 1rem auto 2rem auto;
+  }
 }
 
 section#build button {
@@ -70,6 +113,13 @@ section#build button {
   border-radius: 20px;
   -webkit-box-shadow: 0px 3px 8px 0 gray;
           box-shadow: 0px 3px 8px 0 gray;
+}
+
+@media screen and (min-width: 40rem) {
+  section#build button {
+    height: 50px;
+    border-radius: 25px;
+  }
 }
 
 section#build button:hover {
@@ -89,8 +139,37 @@ section#mockup {
   padding: 5rem 2rem;
 }
 
-section#mockup .grid img {
+@media screen and (min-width: 40rem) {
+  section#mockup {
+    padding: 5rem 5rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  section#mockup {
+    padding: 5rem 10rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  section#mockup {
+    padding: 5rem 15rem;
+  }
+}
+
+section#mockup img {
   width: 100%;
+}
+
+@media screen and (min-width: 40rem) {
+  section#mockup .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
 }
 
 section#mockup .grid .card {
@@ -99,6 +178,12 @@ section#mockup .grid .card {
   margin-top: 3rem;
   padding: 1rem;
   text-align: left;
+}
+
+@media screen and (min-width: 64rem) {
+  section#mockup .grid .card {
+    margin-top: 2rem;
+  }
 }
 
 section#mockup .grid .card img {
@@ -122,8 +207,27 @@ section#grow {
   background-color: #f5faff;
 }
 
+@media screen and (min-width: 40rem) {
+  section#grow {
+    padding: 5rem 5rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  section#grow {
+    padding: 5rem 8rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  section#grow {
+    padding: 5rem 10rem;
+  }
+}
+
 section#grow .flex img {
   width: 100%;
+  max-width: 500px;
 }
 
 section#grow .flex .text {
@@ -138,12 +242,78 @@ section#grow .flex .text p {
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 40rem) {
+  section#grow .flex .text {
+    margin-top: 0;
+  }
+  section#grow .flex .text h2, section#grow .flex .text p {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  section#grow .flex .text h2 {
+    font-size: 1.4rem;
+  }
+  section#grow .flex .text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  section#grow .flex .text h2 {
+    font-size: 1.7rem;
+  }
+  section#grow .flex .text p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  section#grow .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 3rem;
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 section#flow {
   padding: 7rem 3rem;
 }
 
+@media screen and (min-width: 40rem) {
+  section#flow {
+    padding: 5rem 5rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  section#flow {
+    padding: 5rem 8rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  section#flow {
+    padding: 5rem 10rem;
+  }
+}
+
 section#flow .flex img {
   width: 100%;
+  max-width: 500px;
 }
 
 section#flow .flex .text {
@@ -158,13 +328,81 @@ section#flow .flex .text p {
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 40rem) {
+  section#flow .flex .text {
+    margin-top: 0;
+  }
+  section#flow .flex .text h2, section#flow .flex .text p {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  section#flow .flex .text h2 {
+    font-size: 1.4rem;
+  }
+  section#flow .flex .text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  section#flow .flex .text h2 {
+    font-size: 1.7rem;
+  }
+  section#flow .flex .text p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  section#flow .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 3rem;
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+}
+
 section#users {
   padding: 7rem 3rem;
   background-color: #f5faff;
 }
 
+@media screen and (min-width: 40rem) {
+  section#users {
+    padding: 5rem 5rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  section#users {
+    padding: 5rem 8rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  section#users {
+    padding: 5rem 10rem;
+  }
+}
+
 section#users .flex img {
   width: 100%;
+  max-width: 500px;
 }
 
 section#users .flex .text {
@@ -179,9 +417,74 @@ section#users .flex .text p {
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 40rem) {
+  section#users .flex .text {
+    margin-top: 0;
+  }
+  section#users .flex .text h2, section#users .flex .text p {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  section#users .flex .text h2 {
+    font-size: 1.4rem;
+  }
+  section#users .flex .text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  section#users .flex .text h2 {
+    font-size: 1.7rem;
+  }
+  section#users .flex .text p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  section#users .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 3rem;
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 section#ready {
   padding: 7rem 3rem;
   text-align: center;
+}
+
+@media screen and (min-width: 40rem) {
+  section#ready {
+    padding: 5rem 5rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  section#ready {
+    padding: 5rem 8rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  section#ready {
+    padding: 5rem 10rem;
+  }
 }
 
 section#ready button {
@@ -195,7 +498,13 @@ section#ready button {
   -webkit-box-shadow: 0px 3px 8px 0 gray;
           box-shadow: 0px 3px 8px 0 gray;
   margin-top: 2rem;
-  margin-bottom: 15rem;
+}
+
+@media screen and (min-width: 40rem) {
+  section#ready button {
+    height: 50px;
+    border-radius: 25px;
+  }
 }
 
 section#ready button:hover {
@@ -216,12 +525,46 @@ footer {
   background-color: #00252e;
 }
 
+@media screen and (min-width: 64rem) {
+  footer {
+    padding: 4rem 6rem;
+  }
+}
+
 footer .flex {
   color: white;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 64rem) {
+  footer .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 25%;
+    max-width: unset;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 footer .flex #newsletter {
   position: relative;
+}
+
+@media screen and (min-width: 64rem) {
+  footer .flex #newsletter {
+    max-width: 400px;
+  }
 }
 
 footer .flex #newsletter h3 {
@@ -233,7 +576,26 @@ footer .flex #newsletter h4 {
   margin-top: 1rem;
 }
 
-footer .flex #newsletter input {
+@media screen and (min-width: 64rem) {
+  footer .flex #newsletter h4 {
+    max-width: 75%;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  footer .flex #newsletter .form {
+    margin-top: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 2rem;
+  }
+}
+
+footer .flex #newsletter .form input {
   margin-top: 2rem;
   width: 100%;
   height: 40px;
@@ -241,9 +603,16 @@ footer .flex #newsletter input {
   border: none;
   text-align: left;
   padding-left: 1rem;
+  margin-top: 0;
 }
 
-footer .flex #newsletter button {
+@media screen and (min-width: 64rem) {
+  footer .flex #newsletter .form input {
+    height: 100%;
+  }
+}
+
+footer .flex #newsletter .form button {
   width: 230px;
   height: 40px;
   color: white;
@@ -263,32 +632,71 @@ footer .flex #newsletter button {
   font-size: 1rem;
 }
 
-footer .flex #newsletter button:hover {
+@media screen and (min-width: 40rem) {
+  footer .flex #newsletter .form button {
+    height: 50px;
+    border-radius: 25px;
+  }
+}
+
+footer .flex #newsletter .form button:hover {
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background-color: #ff8fd8;
 }
 
-footer .flex #newsletter button:active {
+footer .flex #newsletter .form button:active {
   -webkit-transition: all 0s ease-in-out;
   transition: all 0s ease-in-out;
   background-color: #f5009f;
+}
+
+@media screen and (min-width: 40rem) {
+  footer .flex #newsletter .form button {
+    border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  footer .flex #newsletter .form button {
+    margin-top: 0;
+    width: 100%;
+    left: 0;
+  }
+}
+
+footer .flex #newsletter.error #inputEmail {
+  border: 2px solid red;
 }
 
 footer .flex #newsletter.error::before {
   position: absolute;
   padding-left: 1rem;
   content: "Check your email please";
-  top: 12rem;
+  bottom: 2.5rem;
   left: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 0.6rem;
   color: #ff4242;
 }
 
+@media screen and (min-width: 64rem) {
+  footer .flex #newsletter.error::before {
+    font-size: 0.8rem;
+    bottom: -1.5rem;
+  }
+}
+
 footer .flex #contactInfo {
   margin-top: 5rem;
+}
+
+@media screen and (min-width: 64rem) {
+  footer .flex #contactInfo {
+    margin-top: 0;
+    max-width: 400px;
+  }
 }
 
 footer .flex #contactInfo .grid .svgLogo {
@@ -383,9 +791,21 @@ section#bgTop1 {
   width: 100%;
 }
 
+@media screen and (min-width: 640px) {
+  section#bgTop1 {
+    content: url("../images/bg-section-top-desktop-1.svg");
+  }
+}
+
 section#bgBottom1 {
   content: url("../images/bg-section-bottom-mobile-1.svg");
   width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  section#bgBottom1 {
+    content: url("../images/bg-section-bottom-desktop-1.svg");
+  }
 }
 
 section#bgTop2 {
@@ -393,14 +813,32 @@ section#bgTop2 {
   width: 100%;
 }
 
+@media screen and (min-width: 640px) {
+  section#bgTop2 {
+    content: url("../images/bg-section-top-desktop-2.svg");
+  }
+}
+
 section#bgBottom2 {
   content: url("../images/bg-section-bottom-mobile-2.svg");
   width: 100%;
 }
 
+@media screen and (min-width: 640px) {
+  section#bgBottom2 {
+    content: url("../images/bg-section-bottom-desktop-2.svg");
+  }
+}
+
 section#bgFooter {
   content: url("../images/bg-footer-top-mobile.svg");
   width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  section#bgFooter {
+    content: url("../images/bg-footer-top-desktop.svg");
+  }
 }
 
 * {

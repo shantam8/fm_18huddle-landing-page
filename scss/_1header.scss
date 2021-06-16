@@ -1,41 +1,48 @@
-header{
+header {
+  padding: 1rem;
 
-    padding: 1rem;
+  @include breakpoint(small) {
+    padding: 3rem;
+  }
+  @include breakpoint(medium) {
+    padding: 5rem;
+  }
 
-    .flex
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        img{
-            width: 6rem;
-        }
-
-        button{
-            width: 6rem;
-            height: 2rem;
-            color: $lightPink;
-            background-color: white;
-            border: 1px solid $lightPink;
-            border-radius: 25px;
-            
-
-            &:hover{
-                cursor: pointer;
-                color: $pink;
-                transition: all 0.5s ease-in-out;
-                font-weight: 700;
-            }
-
-            &:active{
-                transition: all 0s ease-in-out;
-                border-color: darken($pink, 30%);
-                color: darken($pink, 30%);
-            }
-        }
+    img {
+      width: 6rem;
+      @include breakpoint(small) {
+        width: 7rem;
+      }
+      @include breakpoint(medium) {
+        width: 8rem;
+      }
     }
 
+    button {
+      width: 6rem;
+      height: 2rem;
+      color: $lightPink;
+      background-color: white;
+      border: 1px solid $lightPink;
+      border-radius: 25px;
 
+      &:hover {
+        cursor: pointer;
+        color: $pink;
+        transition: all 0.5s ease-in-out;
+        font-weight: 700;
+      }
 
+      &:active {
+        transition: all 0s ease-in-out;
+        border-color: darken($pink, 30%);
+        color: darken($pink, 30%);
+      }
+    }
+  }
 }

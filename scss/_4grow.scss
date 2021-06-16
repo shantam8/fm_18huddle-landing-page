@@ -1,7 +1,11 @@
 section#grow {
-@include  middleSectionPadding;
-background-color: $veryPaleBlue;
+  @include middleSectionPadding;
+  background-color: $veryPaleBlue;
   .flex {
     @include middleSections;
+
+    @include breakpoint(small) {
+      @include middleSectionFlex;
+    }
   }
 }
